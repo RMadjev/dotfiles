@@ -14,6 +14,8 @@ Plugin 'skwp/greplace.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'vim-airline/vim-airline'
 Plugin 'ervandew/supertab'
+Plugin 'scrooloose/syntastic'
+Plugin 'Yggdroot/indentLine'
 
 "Plugin 'vim-scripts/indentpython.vim'
 "
