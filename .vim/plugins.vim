@@ -16,9 +16,9 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'ervandew/supertab'
 Plugin 'scrooloose/syntastic'
 Plugin 'Yggdroot/indentLine'
+Plugin 'majutsushi/tagbar'
+Plugin 'shawncplus/phpcomplete.vim'
 
-"Plugin 'vim-scripts/indentpython.vim'
-"
 
 
  call vundle#end()            " required
