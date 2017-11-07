@@ -6,7 +6,6 @@ so ~/.vim/plugins.vim
 syntax enable
 
 
-
 set backspace=indent,eol,start          		 	 "Work as every backspace in most IDEs"
 set number                               		         "Set line numbers
 set showtabline=2						 "Show tabs at the top
@@ -52,6 +51,8 @@ nmap <C-l> <C-w>l
 "easy navigaton buffers
 nmap <c-Left> :bp<cr>
 nmap <c-Right> :bn<cr>
+nmap <c-w> :bd<cr>
+
 "/ultrasnip
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
@@ -59,13 +60,19 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsSnippetsDir        = $HOME.'/.vim/UltiSnips/'
 let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 
-
 "powerline
 let g:Powerline_symbols = 'fancy'
 set laststatus=2   " Always show the statusline
 set encoding=utf-8 " Necessary to show Unicode glyphs
 set noshowmode " Hide the default mode text (e.g. -- INSERT -- below the statusline)
 let g:airline#extensions#tabline#enabled = 1
+
+"tagbar toggle
+nmap <F8> :TagbarToggle<cr>
+
+"php autohint
+imap <c-space> <c-x><c-o>
+
 "------------Mappings-----------"
 
 "autoopen vimrc
@@ -74,6 +81,8 @@ nmap <Leader>ev :tabedit $MYVIMRC<cr>
 nmap <Leader><space> :nohlsearch<cr>
 "make nardtree easies to togll
 nmap <Leader>nav :NERDTreeToggle<cr>
+"search whole project with ctags
+nmap <Leader>f :tag<space>
 "go to method or variable using ctags
 nmap <c-F> :CtrlPBufTag<cr>
 nmap <c-B> <c-]>
@@ -97,5 +106,16 @@ augroup autosourcing
 	autocmd!
 	autocmd BufWritePost .vimrc source %
 augroup END
+
+"notes and tips
+" paste from clipboard -> "+p
+" 
+"
+"
+"
+"
+
+
+
 
 
