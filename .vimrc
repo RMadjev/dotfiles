@@ -17,6 +17,7 @@ set softtabstop=4
 set shiftwidth=4
 set autoread
 
+set smartindent                                                  " Automatically indent when adding a curly bracket, etc.
 
 set complete=.,w,b,u
 
@@ -32,6 +33,10 @@ set showmatch
 "------------Search-----------"
 set hlsearch
 set incsearch
+set ignorecase                                                    " Ignore case when searching.
+
+
+
 
 "-----------Plugins-----------"
 
