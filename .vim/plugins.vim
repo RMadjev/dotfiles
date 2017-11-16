@@ -18,6 +18,8 @@ Plugin 'scrooloose/syntastic'
 Plugin 'Yggdroot/indentLine'
 Plugin 'majutsushi/tagbar'
 Plugin 'shawncplus/phpcomplete.vim'
+"Plugin 'vim-scripts/indentpython.vim'
+"Plugin 'davidhalter/jedi-vim'  
 
 
 
