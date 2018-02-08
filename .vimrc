@@ -45,6 +45,13 @@ let g:ctrlp_match_window = 'order:ttb,min:1,max:30,results:30'
 "let g:ctrlp_custom_ignore = 'node_modules' for ignore of folders
 let g:ctrlp_working_path_mode = 0
 
+"Ag searcher
+let g:ag_working_path_mode="r"
+
+"Greplace
+set grepprg=ag
+
+let g:grep_cmd_opts = '--line-numbers --noheading'
 
 
 "easy navigation
