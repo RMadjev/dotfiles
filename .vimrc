@@ -17,7 +17,7 @@ set softtabstop=4
 set shiftwidth=4
 set autoread
 
-set smartindent                                                  " Automatically indent when adding a curly bracket, etc.
+set smartindent                                                  "Automatically indent when adding a curly bracket, etc.
 
 set complete=.,w,b,u
 
