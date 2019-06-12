@@ -110,6 +110,17 @@ imap <c-s> <Esc>:w<cr>
 nmap <a-left> <c-i>
 nmap <a-right> <c-o>
 
+"-------- vimdiff -------"
+if &diff
+" switch between conflicts
+    map ] ]c
+    map [ [c
+    map <leader>1 :diffget LOCAL<CR>
+    map <leader>2 :diffget BASE<CR>
+    map <leader>3 :diffget REMOTE<CR>
+" download colorscheme and set it here
+"    colorscheme github 
+endif
 
 
 "---------Auto-Commands--------"
