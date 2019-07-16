@@ -1,0 +1,36 @@
+#bashrc
+alias gs="git status"
+alias gl="git l" # l is set as global config
+alias gla="git l --all" # all will list all branches
+alias vi="vim"
+
+git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+
+if [ "$color_prompt" = yes ]; then
+   # PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+   
+   PS1="${debian_chroot:+($debian_chroot)}\[\033[01;32m\]rady@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\033[00;32m\]\$(git_branch)\[\033[00m\]\$ " 
+  # PS1="${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\033[00;32m\]\$(git_branch)\[\033[00m\]\$ " 
+else
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+fi
+unset color_prompt force_color_prompt
+
+
+-- git configs --
+merge.tool=vimdiff
+merge.conflictstyle=diff3
+mergetool.prompt=false
+mergetool.keepbackup=false
+user.name=Rady
+user.email=my mail
+core.editor=vim
+core.filemode=false
+alias.l=log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+alias.shorty=status --short --branch
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
