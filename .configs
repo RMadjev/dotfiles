@@ -2,6 +2,7 @@
 alias gs="git status"
 alias gl="git l" # l is set as global config
 alias gla="git l --all" # all will list all branches
+alias nah='git reset --hard;git clean -df'
 alias vi="vim"
 
 git_branch() {
